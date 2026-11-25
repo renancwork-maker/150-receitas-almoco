@@ -1,40 +1,184 @@
-<!DOCTYPE html><html lang="pt"><head>
-  <meta charset="utf-8">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuar</title>
+
   <!--SCRIPTS UTM's-->
 <script>(function(){var c={"url":"https://cdn.utmify.com.br/scripts/utms/latest.js","attributes":[{"name":"data-utmify-prevent-xcod-sck","value":""},{"name":"data-utmify-prevent-subids","value":""}]};(c.globals||[]).forEach(function(g){window[g.name]=g.value;});var s=document.createElement("script");s.src=c.url;s.async=true;s.defer=true;(c.attributes||[]).forEach(function(a){s.setAttribute(a.name,a.value);});s.setAttribute("fetchpriority","high");(document.head||document.documentElement).appendChild(s);})();</script>
   <!--PIXEL COMPRA UTMIFY-->
 <script>(function(){var c={"url":"https://cdn.utmify.com.br/scripts/pixel/pixel-google.js","attributes":[],"globals":[{"name":"googlePixelId","value":"6b04e6ff7683b7cdd5a28c87"}]};(c.globals||[]).forEach(function(g){window[g.name]=g.value;});var s=document.createElement("script");s.src=c.url;s.async=true;s.defer=true;(c.attributes||[]).forEach(function(a){s.setAttribute(a.name,a.value);});s.setAttribute("fetchpriority","high");(document.head||document.documentElement).appendChild(s);})();</script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>150 Almoços Fitness</title>
-  <meta name="description" content="150 Almoços Fitness práticos, econômicos e saborosos para nunca mais ficar sem ideias na dieta.">
 
-  <!-- Preview de compartilhamento (WhatsApp, Facebook, Telegram e X) -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="150 Almoços Fitness">
-  <meta property="og:title" content="150 Almoços Fitness">
-  <meta property="og:description" content="Receitas práticas, econômicas e saborosas para comer bem sem enjoar da dieta.">
-  <meta property="og:image" content="images/preview-150-almocos-fitness.jpg">
-  <meta property="og:image:secure_url" content="images/preview-150-almocos-fitness.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="628">
-  <meta property="og:image:alt" content="Coleção 150 Almoços Fitness, com receitas práticas, econômicas e saborosas">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="150 Almoços Fitness">
-  <meta name="twitter:description" content="Receitas práticas, econômicas e saborosas para comer bem sem enjoar da dieta.">
-  <meta name="twitter:image" content="images/preview-150-almocos-fitness.jpg">
-  <meta name="twitter:image:alt" content="Coleção 150 Almoços Fitness">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <script type="module" src="js/index-cAWm_LcL.js"></script>
-  <link rel="stylesheet" crossorigin="" href="css/index-BHgoT4zl.css">
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(145deg, #f0f7f3, #e2eee7);
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #20352b;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border: 1px solid #dce8e0;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(20, 70, 45, .08);
+    text-align: center;
+}
+
+.icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: #e5f5eb;
+    color: #16834b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.badge {
+    display: inline-block;
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.headline {
+    font-size: 30px;
+    font-weight: 750;
+    color: #173b29;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.subheadline {
+    font-size: 17px;
+    color: #607067;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: linear-gradient(135deg, #209653, #12713c);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(22, 131, 75, .22);
+    transition: .2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.cta-button:active {
+    transform: scale(.98);
+}
+
+.cta-button:focus-visible {
+    outline: 3px solid #173b29;
+    outline-offset: 4px;
+}
+
+.info {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #708078;
+    line-height: 1.5;
+}
+
+.footer {
+    border-top: 1px solid #e7eee9;
+    padding-top: 20px;
+    margin-top: 28px;
+    font-size: 12px;
+    color: #708078;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 32px 22px;
+    }
+
+    .headline {
+        font-size: 26px;
+    }
+
+    .subheadline {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+        padding: 18px 12px;
+    }
+}
+</style>
 </head>
 
 <body>
-  <div id="root"></div>
-    <footer style="text-align:center;padding:18px 12px 28px;font:13px/1.5 system-ui,sans-serif"><a href="/privacidade/" style="color:#7a8580;text-decoration:underline">Política de Privacidade</a></footer>
 
+<main class="container">
 
+    <div class="icon" aria-hidden="true">
+        ✓
+    </div>
 
-</body></html>
+    <div class="badge">
+        Próxima etapa
+    </div>
+
+    <h1 class="headline">
+        Tudo pronto para continuar!
+    </h1>
+
+    <p class="subheadline">
+        Clique no botão abaixo e confira todas as informações na próxima página.
+    </p>
+
+    <a href="/pagina" class="cta-button">
+        QUERO CONTINUAR →
+    </a>
+
+    <div class="info">
+        Você será direcionado para a próxima página.
+    </div>
+
+    <div class="footer">
+        Todos os direitos reservados.
+    </div>
+
+</main>
+
+</body>
+</html>
