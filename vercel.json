@@ -1,0 +1,3 @@
+{
+  "rewrites": [{"source": "/pagina", "destination": "/pagina/index.html"}]
+}
